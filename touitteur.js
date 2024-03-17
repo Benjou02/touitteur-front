@@ -1,4 +1,4 @@
-const rootApi = "https://f183b36f-c995-443f-81e8-b88a198d5c8c-00-1qyrp99z3857o.picard.replit.dev/"
+const rootApi = "https://touitteur-api.vercel.app/"
 
 const urlParams = new URLSearchParams(window.location.search);
 const user = urlParams.get("newUser") ? urlParams.get("newUser") : urlParams.get("userDDL");
