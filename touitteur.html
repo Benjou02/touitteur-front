@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Touitteur</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Touitteur</h1>
+  </header>
+  <section>
+    <h2>Derniers touittes</h2>
+    <ul id="msgsList">
+    </ul>
+  </section>
+  <section>
+    <h2>Poster un touitte</h2>
+    <form>
+      <label for="message">Exprimez-vous, <span id="username"></span> :</label>
+      <textarea id="message" name="message" rows="4" cols="50"></textarea>
+      <button id="messageButton" class="bigbutton" type="button">Touitter le touitte</button>
+    </form>
+  </section>
+  <section>
+    <button id="logoutButton" class="bigbutton" type="button">Déconnexion</button>
+  </section>
+</body>
+<script src="touitteur.js"></script>
+
+</html>
