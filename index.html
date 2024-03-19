@@ -9,20 +9,21 @@
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 
-<body>
-  <header>
-    <h1>Touitteur</h1>
-  </header>
+<body class="login-page">
+  <div class="login-container">
 
-  <form action="touitteur.html" method="GET">
-    <label for="userDDL">Quel Touittosse déjà connu êtes-vous ?</label>
-    <select id="userDDL" name="userDDL">
-    </select>
-    <br>
-    <label for="newUser">Ou êtes-vous un tout nouveau Touittosse ?</label>
-    <input type="text" id="newUser" name="newUser" placeholder="Nom d'utilisateur">
-    <br>
-    <button class="bigbutton" type="submit">Entrer dans la Touittosphère</button>
+
+    <form action="touitteur.html" method="GET">
+      <img src="Touitteur.png" alt="Logo" class="login-logo">
+      <label for="userDDL">Quel Touittosse déjà connu êtes-vous ?</label>
+      <select id="userDDL" name="userDDL">
+      </select>
+      <br>
+      <label for="newUser">Ou êtes-vous un tout nouveau Touittosse ?</label>
+      <input type="text" id="newUser" name="newUser" placeholder="Nom d'utilisateur">
+      <br>
+      <button class="bigbutton" type="submit">Entrer dans la Touittosphère</button>
+  </div>
   </form>
 </body>
 <script src="script.js"></script>
