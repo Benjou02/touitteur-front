@@ -1,4 +1,4 @@
-const rootApi = "https://touitteur-api.vercel.app/"
+const rootApi = "https://touitteur-back.onrender.com"
 
 function updateAllUsers() {
   fetch(rootApi + "user/getAll")
