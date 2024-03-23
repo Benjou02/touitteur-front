@@ -1,4 +1,4 @@
-const rootApi = "https://touitteur-back.onrender.com"
+const rootApi = "https://touitteur-back.onrender.com/"
 
 const urlParams = new URLSearchParams(window.location.search);
 const user = urlParams.get("newUser") ? urlParams.get("newUser") : urlParams.get("userDDL");
