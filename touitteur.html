@@ -6,12 +6,17 @@
   <meta name="viewport" content="width=device-width">
   <title>Touitteur</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" type="image/png" href="/Touitteur.png" />
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 
 <body>
   <header>
-    <img src="Touitteur.png" alt="Logo" class="logo">
+    <div class="header-left"><img src="Touitteur.png" alt="Logo" class="logo"></div>
+    <div class="header-center">
+      <h1>Touitteur</h1>
+    </div>
+    <div class="header-right"> <button id="logoutButton" class="bigbutton" type="button">Déconnexion</button></div>
   </header>
   <section>
     <h2>👋 Derniers touittes</h2>
@@ -26,9 +31,7 @@
       <button id="messageButton" class="bigbutton" type="button">Touitter le touitte</button>
     </form>
   </section>
-  <section>
-    <button id="logoutButton" class="bigbutton" type="button">Déconnexion</button>
-  </section>
+
 </body>
 <script src="touitteur.js"></script>
 
