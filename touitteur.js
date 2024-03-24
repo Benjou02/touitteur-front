@@ -31,7 +31,7 @@ function checkForNewMessages() {
     });
 }
 
-setInterval(checkForNewMessages, 10000);
+setInterval(checkForNewMessages, 2000);
 
 function createMessage(message, index) {
   let msg = document.createElement("li");
@@ -110,6 +110,7 @@ function updateAllMessages() {
 let messageButton = document.getElementById("messageButton");
 messageButton.addEventListener("click", function() {
   postNewMessage($("textarea").val());
+  $("textarea").val("");
 });
 
 let logoutButton = document.getElementById("logoutButton")
@@ -117,4 +118,3 @@ logoutButton.addEventListener("click", function() {
   alert("Vous êtes déconnecté !");
   window.location.href = "index.html";
 });
-
