@@ -44,15 +44,17 @@ function createMessage(message, index) {
     let messageText = document.createElement("span");
     messageText.textContent = message[1];
     msg.appendChild(messageText);
-    if (message[0] === user) {
-      msg.classList.add("userMessage");
+    if (user === "Admin" || message[0] === user) {
+      if (message[0] === user) {
+        msg.classList.add("userMessage");
+      }
       let deleteButton = document.createElement("button");
       deleteButton.textContent = "🗑️";
       deleteButton.addEventListener("click", function() {
         deleteMessage(index);
       });
       deleteButton.classList.add("deleteButton");
-      messageText.classList.add("userMessageSpan");
+      messageText.classList.add("messageWithButtonSpan");
       messageText.appendChild(deleteButton);
     }
   } else {
