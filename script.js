@@ -12,7 +12,10 @@ function updateAllUsers() {
         user.textContent = data.users[i];
         userDDL.appendChild(user);
       };
-    });
+    })
+    .catch(function(error) {
+      console.error('Erreur lors de l\'actualisation de la liste des utilisateurs :', error);
+    });;
 }
 
 updateAllUsers();
